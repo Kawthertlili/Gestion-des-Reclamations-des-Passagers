@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact et Assistance - Aéroport de Monastir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Contact et Assistance - Aéroport de Monastir</h1>
+        </header>
+
+        <main>
+            <section id="contact-info">
+                <h2>Informations de Contact</h2>
+                <h3>Services clients de l'aéroport de Monastir</h3>
+                <ul>
+                    <li><strong>Aéroport International Habib Bourguiba de Monastir (MIR)</strong><br>
+                        Téléphone: +216 73 520 000<br>
+                        Email: contact@monastir-airport.com<br>
+                        Adresse: Route de l'Aéroport, 5000 Monastir, Tunisie
+                    </li>
+                </ul>
+
+                <h3>Services clients des compagnies aériennes</h3>
+                <ul>
+                    <li><strong>Tunisair</strong><br>
+                        Téléphone: +216 70 103 700<br>
+                        Email: contact@tunisair.com<br>
+                        <a href="https://www.tunisair.com/site/publish/content/article.asp?ID=207" target="_blank">Formulaire de contact</a>
+                    </li>
+                    <!-- Ajouter d'autres compagnies aériennes ici -->
+                </ul>
+            </section>
+
+            <section id="contact-form">
+                <h2>Formulaire de Contact</h2>
+                <form action="liaison.php" method="POST">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Adresse email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="subject">Sujet:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="infos_vols">Informations sur les vols</option>
+                        <option value="bagages_perdus">Bagages perdus</option>
+                        <option value="commentaires">Commentaires</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <div class="captcha">
+                        
+                    </div>
+                
+                    <button type="submit">Envoyer</button>
+                    
+                    <a href="view.php">Voir les messages de contact</a>
+                </form>
+                
+            </section>
+        </main>
+       
+
+
+        <footer>
+            <p>&copy; 2024 Aéroport de Monastir. Tous droits réservés.</p>
+        </footer>
+    </div>
+</body>
+</html>

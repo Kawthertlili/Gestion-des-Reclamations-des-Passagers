@@ -1,0 +1,212 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps du document */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+    background-image: url('ab.jpg'); /* Chemin vers votre image de fond */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Vidéo de fond */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Contenu de la page */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* En-tête */
+header {
+    background: rgba(0, 51, 102, 0.8);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-out;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+/* Contenu principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+ul li strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #003366;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #666;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #002244;
+    transform: scale(1.05);
+}
+
+/* Pied de page */
+footer {
+    background: rgba(0, 51, 102, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Ajoutez ce CSS dans votre fichier style.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+/* Styles simples pour les liens */
+a {
+    color: #007BFF; /* Couleur bleue pour le lien */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    font-weight: bold; /* Texte en gras */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s, color 0.3s; /* Transition pour les effets */
+}
+
+a:hover, a:active {
+    background-color: #007BFF; /* Fond bleu au survol et au clic */
+    color: #FFFFFF; /* Texte blanc au survol et au clic */
+}
+/* Styles simples pour les boutons */
+a.button {
+    color: #FFFFFF; /* Texte blanc */
+    background-color: #007BFF; /* Fond bleu */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Texte en gras */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Transition pour les effets */
+    display: inline-block; /* Affiche le lien comme un bouton */
+}
+
+a.button:hover {
+    background-color: #0056b3; /* Fond bleu foncé au survol */
+}
